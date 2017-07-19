@@ -1,3 +1,13 @@
+一个非常棒的中间件
+等于是phpAdmin;
+用法简单；
+npm i;
+node testserver/index.js;
+到
+http://localhost:4040；
+登录即可
+
+
 # NodeAdmin
 
 A fantastically elegant interface for MySQL and Node.js/Express management.
