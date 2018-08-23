@@ -28,6 +28,9 @@ http://localhost:4040/nodeadmin/#!/login
 
  <script src="node_modules/socket.io-client/dist/socket.io.js"></script>
 
+注意依赖
+  "angular": "1.5.8",
+  "angular-sanitize": "1.5.8",
 
 # NodeAdmin
 
