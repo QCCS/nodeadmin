@@ -1,11 +1,32 @@
 一个非常棒的中间件
+
 等于是phpAdmin;
+
 用法简单；
+
 npm i;
+
 node testserver/index.js;
+
 到
+
 http://localhost:4040；
+
+http://localhost:4040/nodeadmin/#!/login
+
+输入数据库登陆用户，密码，地址
+
 登录即可
+
+---
+
+前端采用angularjs写的
+
+用到了socket
+
+ 注意查看依赖
+
+ <script src="node_modules/socket.io-client/dist/socket.io.js"></script>
 
 
 # NodeAdmin
