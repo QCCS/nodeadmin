@@ -15,6 +15,7 @@ angular.module('nodeadmin', [
   'nodeadmin.settings.deleteUser',
   'nodeadmin.system',
   'nodeadmin.system.modules',
+  'nodeadmin.system.pstree',
   'nodeadmin.system.logs',
   'nodeadmin.db',
   'nodeadmin.db.dbhome',
@@ -111,6 +112,15 @@ angular.module('nodeadmin', [
       data: {
         requireLogin: true
       }
+    })
+    .state('pstree', {
+        parent: 'system',
+        url: '/pstree',
+        templateUrl: 'app/system/pstree/pstree.html',
+        controller: 'PstreeController',
+        data: {
+            requireLogin: true
+        }
     })
     .state('logs', {
       parent: 'system',

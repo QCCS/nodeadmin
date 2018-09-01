@@ -63,7 +63,8 @@
 
   function System($http) {
     var service = {
-      getModules: getModules
+      getModules: getModules,
+      getPstree: getPstree
     };
     return service;
 
@@ -82,6 +83,22 @@
       function getModulesFailed(err) {
         console.error(err);
       }
+    }
+    function getPstree() {
+        return $http({
+            method: 'GET',
+            url: '/nodeadmin/api/system/pstree'
+        })
+            .then(getPstreeComplete)
+            .catch(getPstreeFailed);
+
+        function getPstreeComplete(response) {
+            return response;
+        }
+
+        function getPstreeFailed(err) {
+            console.error(err);
+        }
     }
   }
 
